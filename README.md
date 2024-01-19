@@ -5,7 +5,7 @@ Here are two example videos: https://www.tiktok.com/@ifuckuropinion/video/732589
                              https://www.tiktok.com/@ifuckuropinion/video/7324685436536851744
 
 
-# Set up:
+## Installation
 ```pip install pynput```
 Change your btime if needed
 Change the text as described in the comment inside of the script
