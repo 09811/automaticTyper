@@ -3,10 +3,10 @@ import time
 
 keyboard = Controller()
 
-codestring = """            #<-This line break will add one int the typing proccess so if you dont want it like in the example you have to remove it so i looks like this: codestring="""Your code without line break and the start and end"""
-Your code goes here         #<-
+codestring = """            
+Your code goes here         
 """
-
+#You might want to change this because it will adds a empty line at the start and and. If you dont want it change it like this: codestring="""Your code without line break and the start and end""" (You can still have multiple lines just place the " next to the first and last word)
 
 
 time.sleep(4)  #<- This will wait 4 second so you have time to switch into the input field
