@@ -33,7 +33,7 @@ runProgram(keyboard)                   #<- at the end it will debug the program 
 
 
 
-###
+''' #<- Not content of the string only commented out
 codestring = """
 //Simple Bubble-Sort in C++
 #include <iostream>
@@ -59,4 +59,4 @@ int main() {
 """
 
 each line break will be automaticlly dedectet as \n
-###
+''' 
