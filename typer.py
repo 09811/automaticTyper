@@ -16,9 +16,9 @@ def typeText(keyboard, text, btime):        #<- This function writes the string 
     for char in text:
         keyboard.press(char)
         keyboard.release(char)
-        #if char == '\n':
-        #    keyboard.press(Key.enter)  
-        #    keyboard.release(Key.enter)
+        if char == '\n':                    #<- You dont have to type this at each line end! At the bottom of this page is an example!
+            keyboard.press(Key.enter)  
+            keyboard.release(Key.enter)
         time.sleep(btime) 
 
 
@@ -30,3 +30,33 @@ def runProgram(keyboard):            #<- Created this function because my plan w
         
 typeText(keyboard, codestring, 0)       #<- Here we just call the type function with the kayboard, text, and btime parameters
 runProgram(keyboard)                   #<- at the end it will debug the program (you can remove this and the runProgram function) we dont need a sleep because the compiler takes some time to start (watch examples)
+
+
+
+###
+codestring = """
+//Simple Bubble-Sort in C++
+#include <iostream>
+
+void bubbleSort(int arr[], int size) {
+	for (int i = 0; i < size - 1; ++i) {
+		for (int j = 0; j < size - i - 1; ++j) {
+			if (arr[j] > arr[j + 1]) std::swap(arr[j], arr[j + 1]);
+		}
+	}
+}
+
+int main() {
+	int arr[] = { 12, 45, 78, 3, 26, 61, 89, 34, 50,
+        5, 92, 18, 67, 7, 41, 98, 23, 56, 14, 81}; //Array to sort
+	int size = sizeof(arr) / sizeof(arr[0]);
+	bubbleSort(arr, size);
+	std::cout << "Sorted array: ";
+	for (int i = 0; i < size; ++i) std::cout << arr[i] << " ";
+	std::cout << std::endl;
+	return 0;
+}
+"""
+
+each line break will be automaticlly dedectet as \n
+###
